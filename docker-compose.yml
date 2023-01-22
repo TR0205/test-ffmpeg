@@ -1,0 +1,10 @@
+version: "3"
+services:
+    ffmpeg:
+        container_name: ffmpeg
+        image: jrottenberg/ffmpeg:4.1-alpine
+        tty: true
+        entrypoint:
+            - "ash"
+        volumes:
+            - ./src:/data
